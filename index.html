@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/5b91870b51.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id ="header">
+    <nav>
+        <div class="nav-links">
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </nav>
+    <div class="header-text">
+        <h4>Hi, There!</h4>
+        <h1>I Am <span class="input"></span></h1>
+        <h3>I'm a 3rd year CS student at the University Of Illinois</h3>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class = "about-col-1">
+                <img src ="images/Mustafa.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title2">About Me</h1>
+                <h3>I have always been fascinated by the world of technology and how it can be used to solve problems and make our lives easier.
+
+                     During my studies, I have had the opportunity to work on a number of exciting projects, including Search Engine Project, an Animated Bar Chart Project. I am particularly interested in software engineering and web development and i'm always looking for new ways to expand my knowledge and skills in these areas.
+                    
+                     In my free time, I enjoy staying up-to-date on the latest technology trends and exploring new programming languages and frameworks. I am also an avid gamer and enjoy spending time with my friends and family.
+                    
+                    I am excited to continue learning and growing as a computer science professional and i'm always open to new opportunities and challenges. Feel free to reach out to me if you have any questions or just want to chat!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick = "opentab('education')">Education</p>
+                    <p class="tab-links" onclick = "opentab('tech')">Tech</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>C++<br>C<br>Html<br>Css<br>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - Current</span><br>UIC</li>
+                        <li><span>2019 - 2020</span><br>Moraine Valley Community College</li>
+                        <li><span>2015 - 2019</span><br>Amos Alonzo Stagg High School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="tech">
+                    <ul>
+                        <li><span>Systems</span><br>Visual Studio Code<br>Visual Studio<br>Valgrind<br>GNU Debugger<br>Replit</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section class="projects section" id="projects">
+    <h1 class="sub-title">Projects</h1>
+    <div class="projects_container container2 grid">
+        <div class = "card">
+            <div class="content">
+                    <div>
+                        <i class="fa-solid fa-dna projects_icon"></i>
+                        <h3 class="projects_title">DNA Profiling <br> Project</h3>
+                        <p>This C++/C project involves creating an app that reads in databases of DNA sequences and their respective owners. 
+                        The app processes the data to determine the number of unique DNA sequences and can identify the owner of a given sequence.
+                        To accomplish these tasks, the app implements data structures and algorithms for efficient storage and search. 
+                        The resulting tool is useful for researchers studying DNA and can quickly analyze large sets of data.</p>
+                    </div>
+            </div>
+            <a class="more"></a>
+        </div>
+        <div class = "card">
+            <div class="content">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h3 class="projects_title">Search Engine <br> Project</h3>
+                        <p>This C++ project involves creating a search engine that takes a set of search words or sentences as input and returns a list of relevant URLs.
+                            To accomplish this task, the engine uses a variety of data structures, including maps, to create an inverted index. 
+                            An inverted index is a data structure that maps each element in a body of text to a specific URL. 
+                            The engine uses this inverted index to efficiently search for and retrieve relevant URLs based on the search input. 
+                            This project requires a strong understanding of data structures and algorithms, as well as the ability to design and implement an efficient search engine.</p>
+                    </div>
+            </div>
+            <a class="more"></a>
+        </div>
+        <div class = "card">
+            <div class="content">
+                    <div>
+                        <i class="fa-solid fa-music"></i>
+                        <h3 class="projects_title">Billboard Analysis <br> Project</h3>
+                        <p>This C++ project involves developing a billboard program that analyzes music industry charts over the course of multiple years. The program incorporates 
+                            object-oriented programming to create an efficient and organized design. To ensure good time complexity, the program implements efficient algorithms such as binary
+                            search and merge sort. The program also includes multiple menu options, giving users the ability to check various information for any given decade. This project requires 
+                            a strong understanding of object-oriented programming and algorithms, as well as the ability to design and implement a user-friendly program with good performance.</p>
+                    </div>
+            </div>
+            <a class="more"></a>
+        </div>
+    </div>
+    <div class="projects_container container2 grid">
+        <div class = "card">
+            <div class="content">
+                    <div>
+                        <i class="fa-solid fa-dna projects_icon"></i>
+                        <h3 class="projects_title">March Madness Frenzy Game<br> Project</h3>
+                        <p>In this C++ project, I created a March Madness game that allows users to explore years of data from the NCAA Division I Men's Basketball Tournament. 
+                            The game utilizes a linked list data structure to efficiently construct sub-brackets, and uses recursion to enable users to generate their own hypothetical championship runs.
+                            The game also includes a menu system, which allows users to select different options to access more specific information about past tournaments. Overall, this project combines 
+                            the use of efficient data structures with interactive features to provide a comprehensive and engaging experience for fans of March Madness.
+                        </p>
+                    </div>
+            </div>
+            <a class="more"></a>
+        </div>
+        <div class = "card">
+            <div class="content">
+                    <div>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h3 class="projects_title">Bar Chart Animated<br> Project</h3>
+                        <p>This C++ program uses object oriented programming to create an animated graph that constantly changes through frames. The program utilizes classes to 
+                            represent the various components of the graph, such as the data points and the axes. These classes are then used to instantiate objects that make up the graph, 
+                            and the program uses inheritance to ensure that the objects maintain a consistent interface. The program also uses polymorphism to allow for different types of graphs to be 
+                            displayed, such as bar graphs or line graphs. The animation is achieved through the use of a loop that updates the graph at regular intervals, creating the illusion of movement.
+                            Overall, the program is heavily structured around object oriented programming principles to create a dynamic and visually appealing experience.
+                        </p>
+                    </div>
+            </div>
+            <a class="more"></a>
+        </div>
+        <div class = "card">
+            <div class="content">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <h3 class="projects_title">Prioirty Queue<br> Project</h3>
+                        <p>Project that utilizes an abstraction class for a priority queue. This priority queue is used to prioritize and manage tasks in a multi-threaded environment. By using the abstraction class, we are able to abstract away the implementation details of the priority queue and easily swap in different implementations as needed. This allows us to easily modify the priority queue to suit the needs of our project without affecting the rest of the codebase. Overall, the use of an abstraction class for the priority queue has greatly improved the flexibility and maintainability of our project
+                        </p>
+                    </div>
+            </div>
+            <a class="more"></a>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title2">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mrush6@uic.edu</p>
+                <p><i class="fa-solid fa-phone"></i>708-673-2373</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mustafa-rushdi-a56766236/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/MustafaRush731"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/MustafaResume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://formsubmit.co/mrush6@uic.edu" method="POST">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type ="text/javaScript" src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".input",{
+        strings:["Mustafa Rushdi", "Software Engineer", "Web Developer", "Gamer"],
+        typeSpeed: 70,
+        backSpeed: 60,
+        loop: true
+    });
+</script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    let more = document.querySelectorAll('.more');
+    for (let i = 0; i<more.length; i++){
+        more[i].addEventListener('click',function(){
+            more[i].parentNode.classList.toggle('active')
+        })
+    }
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "mrush6@uic.edu",
+            Password : "MustafaShaban73$",
+            To : 'mrush6@uic.edu',
+            From : document.getElementById("email").value,
+            Subject : "New Contact",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+    }
+</script>
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
